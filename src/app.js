@@ -13,7 +13,12 @@ app.use(express.static(SharedLocation));
 app.get("/", (req, res) => {
   res.render("index", { Title: "HomePage", Name: "Paras" });
 });
-
+app.get("/index", (req, res) => {
+  res.render("index", { Title: "HomePage", Name: "Paras" });
+});
+app.get("/help", (req, res) => {
+  res.render("help", { Title: "HomePage", Name: "Paras" });
+});
 app.listen(port, () => {
   console.log("listening on port" + port);
 });
