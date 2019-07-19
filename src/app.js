@@ -39,7 +39,8 @@ app.get("/weather", (req, res) => {
           else {
             res.send({
               weather_details: body.currently,
-              Location: location
+              Location: location,
+              weather_daily: body.daily
             });
           }
         });

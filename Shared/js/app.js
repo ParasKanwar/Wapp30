@@ -13,7 +13,9 @@ form.addEventListener("submit", e => {
       if (data.error) message1.textContent = data.error;
       else {
         message1.textContent = ` (${data.Location}) `;
-        message2.textContent = `Current Temperature is ${
+        message2.textContent = `${
+          data.weather_daily.summary
+        } , Current Temperature is ${
           data.weather_details.temperature
         }*C And There is ${data.weather_details.precipProbability *
           100}% Chances Of Raining.`;
