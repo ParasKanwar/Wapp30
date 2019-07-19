@@ -29,7 +29,7 @@ li a:hover {
   background-color: hsl(210, 89%, 22%);
 }
 .Logo {
-  width: 80px;
+  width: 70px;
   padding-top: 16px;
 }
 
@@ -40,7 +40,12 @@ footer {
   margin-top: 16px;
   padding: 13px 0;
 }
-
+.main_content {
+  flex-grow: 1;
+}
+.Help {
+  font-size: 18px;
+}
 /* body {
   color: #333333;
   font-family: Arial;
@@ -144,6 +149,4 @@ button:hover {
 .LL {
   float: none;
 }
-.Help {
-  font-size: 18px;
-} */
+ */
