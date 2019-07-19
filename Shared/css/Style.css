@@ -13,10 +13,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: url(Bg2.jpg) no-repeat center;
-  background-size: cover;
-
-  position: relative;
+  background-color: #333333;
 }
 .Top {
   list-style-type: none;
