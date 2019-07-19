@@ -6,32 +6,45 @@ body {
   padding: 0 16px;
   display: flex;
   flex-direction: column;
-  min-height: 70vh;
+  min-height: 100vh;
 }
-ul {
+#Navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: hsl(0, 0%, 0%);
+  background: url(Bg2.jpg) no-repeat center;
+  background-size: cover;
+
+  position: relative;
 }
-li {
+.Top {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.Bg {
+  float: left;
+  padding-top: 18px;
+}
+.Nav {
   float: left;
 }
-li a {
+.Nav a {
   display: block;
   color: white;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
 }
-li a:hover {
+.Nav a:hover {
   color: black;
   background-color: hsl(0, 0%, 100%);
 }
 .Logo {
   width: 70px;
-  padding-top: 16px;
+  padding: 16px;
 }
 
 footer {
@@ -89,6 +102,21 @@ h1 {
   font-size: 44px;
   margin-bottom: 16px;
 }
+.hero-image {
+  background: url(Bg1.jpg) no-repeat center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+
+/* .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+} */
 
 /* body {
   color: #333333;
