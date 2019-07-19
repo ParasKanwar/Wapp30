@@ -44,7 +44,16 @@ footer {
   flex-grow: 1;
 }
 .Help {
-  font-size: 18px;
+  font-size: 14px;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+.robot {
+  width: 250px;
+  margin: 0 auto;
 }
 /* body {
   color: #333333;
@@ -79,10 +88,7 @@ header a {
   text-decoration: none;
 }
 
-.robot {
-  width: 250px;
-  margin: 0 auto;
-}
+
 
 ul {
   list-style-type: none;
