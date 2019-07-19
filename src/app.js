@@ -26,6 +26,21 @@ app.get("/help", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", { Title: "About", Name: "Paras Kanwar" });
 });
+app.get("/help/*", (req, res) => {
+  res.render("404", {
+    Title: "Error 404",
+    Name: "Paras",
+    Error:
+      "This Web_page is not reachable,Besides if you are looking For help Visit Help tab above you."
+  });
+});
+app.get("/*", (req, res) => {
+  res.render("404", {
+    Title: "Error 404",
+    Name: "Paras",
+    Error: "This Web_page is not reachable"
+  });
+});
 app.listen(port, () => {
   console.log("listening on port" + port);
 });

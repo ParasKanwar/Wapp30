@@ -70,6 +70,9 @@ button:hover {
   color: black;
   background: hsl(209, 91%, 46%);
 }
+Error {
+  text-shadow: #888888;
+}
 /* body {
   color: #333333;
   font-family: Arial;
