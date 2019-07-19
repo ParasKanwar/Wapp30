@@ -6,6 +6,8 @@ const SharedLocation = path.join(__dirname, "../Shared");
 const ViewLocation = path.join(__dirname, "../Templates/Views");
 const partialLocation = path.join(__dirname, "../Templates/Partials");
 const port = process.env.PORT || 3000;
+const geocode = require("./Utils/geocode");
+const forecast = require("./Utils/forecast");
 app.set("view engine", "hbs");
 app.set("views", ViewLocation);
 hbs.registerPartials(partialLocation);
@@ -25,6 +27,22 @@ app.get("/help", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.render("about", { Title: "About", Name: "Paras Kanwar" });
+});
+app.get("/weather", (req, res) => {
+  geocode(req.query.address, (error, { latitude, longitude, location }) => {
+    if (error) res.send({ error });
+    else {
+      forecast(latitude, longitude, (error, { body }) => {
+        if (error) res.send({ error });
+        else {
+          res.send({
+            weather_details: body.currently,
+            Location: location
+          });
+        }
+      });
+    }
+  });
 });
 app.get("/help/*", (req, res) => {
   res.render("404", {

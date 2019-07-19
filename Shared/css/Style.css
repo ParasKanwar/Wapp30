@@ -73,6 +73,18 @@ button:hover {
 Error {
   text-shadow: #888888;
 }
+#message-1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+#message-2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #888888;
+}
+
 /* body {
   color: #333333;
   font-family: Arial;
