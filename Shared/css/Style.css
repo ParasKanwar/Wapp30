@@ -13,7 +13,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: hsl(210, 91%, 46%);
+  background-color: hsl(0, 0%, 0%);
 }
 li {
   float: left;
@@ -26,7 +26,8 @@ li a {
   text-decoration: none;
 }
 li a:hover {
-  background-color: hsl(210, 89%, 22%);
+  color: black;
+  background-color: hsl(0, 0%, 100%);
 }
 .Logo {
   width: 70px;
@@ -63,12 +64,12 @@ button {
   border: 2px solid #888888;
   padding: 8px;
   color: black;
-  background: #888888;
+  background: #a7a5a5;
   cursor: pointer;
 }
 button:hover {
-  color: black;
-  background: hsl(209, 91%, 46%);
+  color: rgb(255, 255, 255);
+  background: hsl(0, 0%, 0%);
 }
 Error {
   text-shadow: #888888;
