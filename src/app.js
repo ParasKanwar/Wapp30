@@ -29,20 +29,23 @@ app.get("/about", (req, res) => {
   res.render("about", { Title: "About", Name: "Paras Kanwar" });
 });
 app.get("/weather", (req, res) => {
-  geocode(req.query.address, (error, { latitude, longitude, location }) => {
-    if (error) res.send({ error });
-    else {
-      forecast(latitude, longitude, (error, { body }) => {
-        if (error) res.send({ error });
-        else {
-          res.send({
-            weather_details: body.currently,
-            Location: location
-          });
-        }
-      });
+  geocode(
+    req.query.address,
+    (error, { latitude, longitude, location } = {}) => {
+      if (error) res.send({ error });
+      else {
+        forecast(latitude, longitude, (error, { body }) => {
+          if (error) res.send({ error });
+          else {
+            res.send({
+              weather_details: body.currently,
+              Location: location
+            });
+          }
+        });
+      }
     }
-  });
+  );
 });
 app.get("/help/*", (req, res) => {
   res.render("404", {

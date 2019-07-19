@@ -1,6 +1,7 @@
 const request = require("request");
 
 const geolocation = (address, callback) => {
+  if (!address) return callback("Must Provide Address", undefined);
   const Curl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
     address
   )}.json?access_token=pk.eyJ1IjoicGFyYXNrYW53YXIzMCIsImEiOiJjanh2ZHg4MG4wM3oyM2xxaDg5Y2IzMThqIn0.KS-4Pa_K6YGdDDgcUi_FsQ&limit=1`;
