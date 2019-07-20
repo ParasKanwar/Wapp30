@@ -26,7 +26,7 @@ app.get("/help", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.render("about", { Title: "About", Name: "Paras Kanwar" });
+  res.render("about", { Title: "About", Name: "Paras" });
 });
 app.get("/weather", (req, res) => {
   geocode(
