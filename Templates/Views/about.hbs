@@ -7,28 +7,42 @@
     </title>
 
     <link rel="icon" href="/img/weather.png">
-    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="main_content">
-        {{>Header}}
-        <img class="robot" src="/img/Paras.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="space">
+                    <div class="main_content">
+                        {{>Header}}
+                        <div class="img">
+
+                            <img class="robot" src="/img/Paras.png">
+
+
+                            <h2>
+                                Hello there!<br></h2>
+                            <p class="about"><b>
+                                    Welcome To my Weather app,<br>
+                                    This App is only About Weather,It Uses DarkSky_Api To Fetch Weather Information<br>
+                                    This is Created By Me (#Paras Kanwar) And Above Photo Is My Favourite Symbol<br>
+                                    And That Symbol Serves No Purpose Beside the Fact That It's My Favourite Symbol
+                                    (LOL)<br>
+                                    <br>
+                                    <br>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    {{>Footer}}
+                </div>
+            </div>
+        </div>
     </div>
-    <h2>
-        Hello there!<br></h2>
-    <p class="about"><b>
-            Welcome To my Weather app,<br>
-            This App is only About Weather,It Uses DarkSky_Api To Fetch Weather Information<br>
-            This is Created By Me (#Paras Kanwar) And Above Photo Is My Favourite Symbol<br>
-            And That Symbol Serves No Purpose Beside the Fact That It's My Favourite Symbol (LOL)<br>
-            <br>
-            <br>
-
-    </p>
-
-
-    {{>Footer}}
 </body>
 
 </html>

@@ -8,14 +8,24 @@
     </title>
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="main_content">
-        {{>Header}}
-        <p class="Error">{{Error}}</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="space">
+
+                    <div class="main_content">
+                        {{>Header}}
+                        <p class="Error">{{Error}}</p>
+                    </div>
+                    {{>Footer}}
+                </div>
+            </div>
+        </div>
     </div>
-    {{>Footer}}
 </body>
 
 </html>

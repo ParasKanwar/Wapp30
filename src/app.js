@@ -29,6 +29,7 @@ app.get("/about", (req, res) => {
   res.render("about", { Title: "About", Name: "Paras" });
 });
 app.get("/weather", (req, res) => {
+  if (!req.query.address) return res.send({ error: "Must Provide Address" });
   geocode(
     req.query.address,
     (error, { latitude, longitude, location } = {}) => {
