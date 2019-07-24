@@ -8,8 +8,9 @@
 
             <h1>{{Title}}</h1>
         </label>
-
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        {{!-- navbar sticky-top navbar-light bg-light --}}
+        {{!-- navbar navbar-expand-lg navbar-light sticky-top --}}
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #b4e0e6;">
             <a class="navbar-brand" href="#">
                 <img src="img/weather.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 Weather-App</a>
@@ -18,7 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mr-auto justify-content-end">
                     <li class="nav-item active">
                         <a class="nav-link" href="/index">Home<span class="sr-only">(current)</span></a>
                     </li>
